@@ -23,8 +23,6 @@ The zoos want to display both the scientific name and the animal name in front o
 
 
 
-
-
 const displayNames = [];
 console.log(displayNames);
 zooAnimals.forEach(creatureNames => displayNames.push(`Names: ${creatureNames.animal_name} Scientific: ${creatureNames.scientific_name}`))
@@ -74,6 +72,9 @@ populationTotal = zooAnimals.reduce(function (animalTotal, element) {
 }, 0);
 console.log(populationTotal);
 
+// populationTotal = zooAnimals.reduce(animalTotal,element => (animalTotal + element.population))
+
+
 
 // ==== Callbacks ====  
 
@@ -87,8 +88,6 @@ console.log(populationTotal);
 function consume(a, b, cb) {
   return cb(a, b);
 }
-
-
 
 
 
