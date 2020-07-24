@@ -103,8 +103,8 @@ const add = (a, b) => {
 const multiply = (a, b) => {
   return a * b;
 }
-const greeting = (first_name, last_name) => {
-  return `Hello ${first_name} ${last_name}, nice to meet you!`
+const greeting = (firstname, lastname) => {
+  return `Hello ${firstname} ${lastname}, nice to meet you!`
 }
 
 
