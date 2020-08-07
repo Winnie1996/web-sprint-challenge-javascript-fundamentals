@@ -16,20 +16,19 @@ function myFunction() {
 }
 myFunction();
 
-// Explanation: 
-// It's a lexical scope in which the closure function lets you use the outer element/scopes 
+// Explanation: It's a lexical scope in which the closure function lets you use the outer element/scopes
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
-function summation(add){
+function summation(add) {
   let counter = []
- for (let i = 0; i <= add; i++){
-   counter.push(i)
- }
- return counter.reduce(function(a, b){
-   return a + b
- })
+  for (let i = 0; i <= add; i++) {
+    counter.push(i)
+  }
+  return counter.reduce(function (a, b) {
+    return a + b
+  })
 
 }
 console.log(summation(4));

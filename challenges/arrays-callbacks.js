@@ -41,9 +41,10 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = []
-console.log(lowCaseAnimalNames);
-zooAnimals.map(allAnimalName => lowCaseAnimalNames.push(allAnimalName.animal_name.toLowerCase()))
+// const lowCaseAnimalNames = []
+// console.log(lowCaseAnimalNames);
+// const lowCaseAnimalNames = zooAnimals.map(allAnimalName => allAnimalName.animal_name.toLowerCase())
+
 
 // zooAnimals.map(function(allAnimalName){
 //   lowCaseAnimalNames.push(allAnimalName.animal_name.toLowerCase())
@@ -72,8 +73,8 @@ populationTotal = zooAnimals.reduce(function (animalTotal, element) {
 }, 0);
 console.log(populationTotal);
 
-// populationTotal = zooAnimals.reduce(animalTotal,element => (animalTotal + element.population))
-
+// let populationTotal2 = zooAnimals.reduce((animalTotal,element) => animalTotal + element.population)
+// console.log(populationTotal2);
 
 
 // ==== Callbacks ====  
